@@ -584,12 +584,12 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
     printer->Print(
       "}\n"
       "- (int32_t) serializedSize {\n"
-      "  int32_t size_ = memoizedSerializedSize;\n"
-      "  if (size_ != -1) {\n"
-      "    return size_;\n"
-      "  }\n"
-      "\n"
-      "  size_ = 0;\n");
+//      "  int32_t size_ = memoizedSerializedSize;\n"
+//      "  if (size_ != -1) {\n"
+//      "    return size_;\n"
+//      "  }\n"
+//      "\n"
+      "int32_t  size_ = 0;\n");
     printer->Indent();
 
     for (int i = 0; i < descriptor_->field_count(); i++) {
