@@ -589,7 +589,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 //      "    return size_;\n"
 //      "  }\n"
 //      "\n"
-      "int32_t  size_ = 0;\n");
+      "  int32_t  size_ = 0;\n");
     printer->Indent();
 
     for (int i = 0; i < descriptor_->field_count(); i++) {
