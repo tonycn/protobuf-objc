@@ -407,9 +407,9 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
     GenerateMessageDescriptionSource(printer);
 
-    GenerateMessageIsEqualSource(printer);
+    //GenerateMessageIsEqualSource(printer);
 
-    GenerateMessageHashSource(printer);
+    //GenerateMessageHashSource(printer);
 
     printer->Print("@end\n\n");
 
